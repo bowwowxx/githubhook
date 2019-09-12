@@ -6,12 +6,12 @@
 
 ### 2.Run githubhook service  
  
-- go build
+**go build**  
 ```
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o githubhook main.go
 ```
 
-- run on server
+**run on server**
 ```
 chmod +x githubhook && ./githubhook &
 ```
@@ -19,13 +19,10 @@ chmod +x githubhook && ./githubhook &
 ### 3.Setting github repository webhook  
 
  **Github page setting：**  
- 
- <img src="./01.png" width="50%" height="50%">
- <img src="./02.png" width="50%" height="50%">
+ <img src="./01.png" width="40%" height="40%"><img src="./02.png" width="40%" height="50%">
 
  **Run github hook server:**  
- <img src="./04.png" width="50%" height="50%">
- <img src="./05.png" width="50%" height="50%">
+ <img src="./04.png" width="40%" height="40%"><img src="./05.png" width="40%" height="40%">
  
  **Check Log:**  
  ```
