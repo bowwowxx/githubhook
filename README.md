@@ -20,18 +20,14 @@ chmod +x githubhook && ./githubhook &
 ### 3.Setting github repository webhook
 
  **Github page setting：**
-  ![mole](https://github.com/bowwowxx/githubhook/blob/master/01.png)  
-  ![mole](https://github.com/bowwowxx/githubhook/blob/master/02.png)
+   <img src="./01.png" width="50" height="50">
 
- **Run github hook server:**  
-  ![mole](https://github.com/bowwowxx/githubhook/blob/master/04.png)  
-  ![mole](https://github.com/bowwowxx/githubhook/blob/master/05.png)    
  
  **Check Log:**
  ```
  tail -f /tmp/log
  ```
-  ![mole](https://github.com/bowwowxx/githubhook/blob/master/03.png) 
+  ![mole](https://github.com/bowwowxx/githubhook/blob/master/03.png)
 
 ### 4.Verification Content
 HTTP POST、RequestUrl、 X-Hub-Signature、 x-github-event
