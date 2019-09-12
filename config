@@ -1,0 +1,7 @@
+{
+  "requestUrl": "/auto_build",
+  "secret": "QQ",
+  "host": "localhost",
+  "port": "8080",
+  "script": "/Users/andyshih/github/WW/hello.sh"
+}
