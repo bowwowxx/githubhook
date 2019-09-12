@@ -42,24 +42,13 @@ func autoBuild(w http.ResponseWriter, r *http.Request) {
 
 			var data Gitdata
 			json.Unmarshal([]byte(bodyContent), &data)
-			// fmt.Printf("1:%s\n", data)
-			// fmt.Printf("2:%s\n", data.Repository.Name)
 			// fmt.Printf("3:%s\n", data.Repository.Full_name)
-
-			//marshl to json
-			// b, err := json.Marshal(data)
-			// if err != nil {
-			// 	fmt.Println(err)
-			// 	return
-			// }
-			// fmt.Println(string(b))
-
 			serviceStr := "QQ"
 			key := strings.ToLower(data.Repository.Name)
 			switch key {
 			case "ckiptagger":
 				serviceStr = "hi"
-			case "pitaya-backend-service-gateway": 
+			case "pitaya-backend-service-gateway":
 				serviceStr = "gateway"
 			case "pitaya-backend-service-member":
 				serviceStr = "member"
